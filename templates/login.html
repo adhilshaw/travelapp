@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> login</title>
+
+
+    </head>
+     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+        .container{
+            padding: 16px;
+            background-color: white;
+        }
+        input[type=text], input[type=password] , input[type=email]{
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+                }
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+                }
+        .loginbtn {
+            background-color: #2828b6;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+                    }
+        .loginbtn:hover {
+            opacity: 1;
+              }
+
+
+
+     </style>
+
+
+
+
+
+    <body style="background-color:bisque;">
+        <form method="post" action="login">
+            {% csrf_token %}
+            <div class="container">
+                <h1>Login</h1>
+
+
+            <input type="text" name="username" placeholder="enter the username"><br>
+
+            <input type="password" name="password" placeholder="enter the password"><br>
+            <button type="submit"
+            class="loginbtn"> Login</button>
+
+        </div>
+        </div>
+
+
+             </div>
+
+        </form>
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+    </html>
